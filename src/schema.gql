@@ -1,0 +1,30 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Vehiculo {
+  id: ID!
+  descripcion: String!
+  placa: String!
+}
+
+type Query {
+  vehiculos(id: ID!): Vehiculo!
+}
+
+type Mutation {
+  createVehiculo(createVehiculoInput: CreateVehiculoInput!): Vehiculo!
+  updateVehiculo(updateVehiculoInput: UpdateVehiculoInput!): Vehiculo!
+  removeVehiculo(id: ID!): Vehiculo!
+}
+
+input CreateVehiculoInput {
+  descripcion: String!
+  placa: String!
+}
+
+input UpdateVehiculoInput {
+  descripcion: String
+  placa: String
+  id: ID!
+}
