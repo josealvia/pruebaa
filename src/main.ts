@@ -11,6 +11,6 @@ async function bootstrap() {
   }))
 
   await app.listen(3000);
-  console.log("conectado")
+  console.log("conectadoooo")
 }
 bootstrap();
